@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    margin: 0;
+}
+
+
+body {
+    cursor: cell;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ul {
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.decks {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 20px;
+    width: 90%;
+}
+
+.deck {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: none;
+    padding: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.deck:hover {
+    box-shadow: 0px 5px 10px 0px #DDD;
+}
+
+.legend {
+    cursor: inherit;
+}
+
+.legend:hover {
+    box-shadow: none;
+}
+
+/* .legend > .deck-buttons {
+    visibility: hidden;
+} */
+
+.deck-entry {
+    padding: 10px 20px;
+    flex: 1;
+    text-align: left;
+}
+.deck-stats {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.deck-stats > div {
+    padding: 0 10px;
+}
+
+.deck-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
