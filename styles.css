@@ -6,6 +6,28 @@ hr {
     margin: 0;
 }
 
+table {
+    width: 50%;
+}
+
+th {
+    text-align: left;
+
+}
+
+td {
+    padding: 3px;
+}
+
+tr > td {
+    padding-left: 20px;
+}
+caption {
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+
 
 body {
     cursor: cell;
@@ -79,4 +101,8 @@ ul {
 .deck-buttons {
     display: flex;
     justify-content: space-evenly;
+}
+
+.chart {
+    width: 90%;
 }

@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flashcard App</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="render.js"></script>
 </head>
 <body>
     <div class="header">
         <h1>Paula App</h1>
     </div>
-    <ul class="decks">
-        <li class="deck legend" onclick="">
+    <ul id="decks" class="decks">
+        <li class="deck legend">
             <div class="deck-title deck-entry">Deck</div>
             <div class="deck-stats deck-entry">
                 <div>New</div>
@@ -24,6 +25,7 @@
         </li>
         <hr id="legendBar">
         <li class="deck">
+            <a href="deck.html" class="deck-link"></a>
             <div class="deck-title deck-entry">Geography</div>
             <div class="deck-stats deck-entry">
                 <div>10</div>
